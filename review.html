@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Your Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Order Review</h1></header>
+  <main class="container">
+    <h2>Leave a Review</h2>
+    <div id="orderDetails"></div>
+    
+    <label>Your Rating:</label>
+    <div class="stars" id="starRating">
+      <span data-value="1">★</span>
+      <span data-value="2">★</span>
+      <span data-value="3">★</span>
+      <span data-value="4">★</span>
+      <span data-value="5">★</span>
+    </div>
+    
+    <label for="reviewText">Comments:</label>
+    <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+    
+    <button id="submitReview" class="btn">Submit Review</button>
+  </main>
+  <footer>&copy; 2025 FarmConnect</footer>
+  <script src="script.js"></script>
+</body>
+</html>

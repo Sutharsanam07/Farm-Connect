@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Checkout</h1></header>
+  <main class="container">
+    <div class="payment-layout">
+      <section class="order-summary card">
+        <h2>Order Summary</h2>
+        <div id="billDetails">
+          </div>
+      </section>
+
+      <section class="payment-options card">
+        <h2>Payment Method</h2>
+        <form id="paymentForm">
+          <div class="payment-method">
+            <input type="radio" id="creditCard" name="paymentMethod" value="card" checked>
+            <label for="creditCard">Credit / Debit Card</label>
+          </div>
+          <div id="creditCardForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+            <label for="cardExpiry">Expiry Date:</label>
+            <input type="text" id="cardExpiry" placeholder="MM/YY">
+            <label for="cardCVC">CVC:</label>
+            <input type="text" id="cardCVC" placeholder="123">
+          </div>
+          <div class="payment-method">
+            <input type="radio" id="upi" name="paymentMethod" value="upi">
+            <label for="upi">UPI</label>
+          </div>
+          <div class="payment-method">
+            <input type="radio" id="cod" name="paymentMethod" value="cod">
+            <label for="cod">Cash on Delivery</label>
+          </div>
+          <button id="payBtn" class="btn" style="width: 100%; margin-top: 20px;">Pay Now</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>&copy; 2025 FarmConnect</footer>
+  <script src="script.js"></script>
+</body>
+</html>
